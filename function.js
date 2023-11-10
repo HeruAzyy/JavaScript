@@ -1,13 +1,44 @@
-// FUNCTION DECLARATION
-function tambah(a, b) {
-  let total = a + b
-  return total
-}
-console.log('Hasil function Declaration: ' + tambah(10, 10))
+// ======================================== FUNCTION DECLARATION
+// function tambah(a, b) {
+//   let total = a + b
+//   return total
+// }
+// console.log(tambah(10, 10))
 
-// FUNCTION EXPRESSION = function tanpa nama
-const tambahAngka = function (a, b) {
-  let total = a + b
-  return total
+// function nama(saya) {
+//   console.log(`Nama saya ${saya}`)
+// }
+// nama('Heru Azy')
+
+// ======================================== FUNCTION EXPRESSION
+// const tambahAngka = function (a, b) {
+//   let total = a + b
+//   return total
+// }
+// console.log(tambahAngka(5, 10))
+
+// const sayHello = function (hello) {
+//   console.log(hello)
+// }
+// sayHello('Anjay ini function')
+
+// ======================================== NESTED FUNCTION
+// function outer() {
+//   function inner() {
+//     console.log('Ini function Inner')
+//   }
+
+//   inner()
+// }
+// outer()
+// inner() -> panggil func diluar scope akan error
+
+// ======================================== RECURSIVE FUNCTION
+function factorial(value) {
+  if (value === 1) {
+    return 1
+  } else {
+    return value * factorial(value - 1)
+  }
 }
-console.log('Hasil function Expression: ' + tambahAngka(5, 10))
+console.log(factorial(7))
