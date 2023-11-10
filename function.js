@@ -48,9 +48,15 @@ const orang = (nama) => {
   const say = `Nama saya: ${nama}`
   console.log(say)
 }
+<<<<<<< HEAD
 orang('Heru Azy')
 orang('Lesi Merina')
 
 // arrow function bisa ditulis dalam satu baris jika code sederhana.
 const contoh = () => console.log('Function tanpa block/sebaris')
 contoh()
+=======
+
+orang('Heru Azy')
+orang('Lesi Merina')
+>>>>>>> f8a3fadf4d9ae4cf252c45a135f735e2fbc8dccb
