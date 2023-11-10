@@ -42,3 +42,15 @@ function factorial(value) {
   }
 }
 console.log(factorial(7))
+
+// ======================================== ARROW FUNCTION
+const orang = (nama) => {
+  const say = `Nama saya: ${nama}`
+  console.log(say)
+}
+orang('Heru Azy')
+orang('Lesi Merina')
+
+// arrow function bisa ditulis dalam satu baris jika code sederhana.
+const contoh = () => console.log('Function tanpa block/sebaris')
+contoh()
