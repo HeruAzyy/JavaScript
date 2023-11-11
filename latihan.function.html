@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <style>
+      .dark {
+        background-color: #1a1a64;
+        color: #e6e6e6;
+      }
+    </style>
+
+    <title>Function & DOM</title>
+  </head>
+  <body>
+    <script>
+      document.body.style.maxWidth = '500px'
+      document.body.style.textAlign = 'center'
+      document.body.style.fontFamily = 'Poppins'
+      document.body.style.transition = '200ms'
+
+      // H1 function expression
+      const judul = function (teks) {
+        const h1 = document.createElement('h1')
+        const teksH1 = document.createTextNode(teks)
+
+        h1.appendChild(teksH1)
+        document.body.appendChild(h1)
+      }
+
+      judul('Function x DOM')
+
+      // button
+      const btn = document.createElement('button')
+      const teksBtn = document.createTextNode('Mode')
+
+      btn.appendChild(teksBtn)
+      document.body.appendChild(btn)
+      btn.setAttribute('type', 'button')
+      btn.style.cursor = 'pointer'
+
+      // saat btn diklik akan merubah dark mode
+      btn.addEventListener('click', () => {
+        document.body.classList.toggle('dark')
+      })
+
+      // P function arrow
+      const paragraf = (teks) => {
+        const p = document.createElement('p')
+        const teksP = document.createTextNode(teks)
+
+        p.appendChild(teksP)
+        document.body.append(p)
+      }
+
+      paragraf(
+        'Selamat datang di latihan Function x DOM. Ini saya buat menggunakan DOM yang disimpan dalam function untuk keperluan reusability.'
+      )
+    </script>
+  </body>
+</html>
