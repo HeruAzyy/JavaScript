@@ -41,7 +41,7 @@ function factorial(value) {
     return value * factorial(value - 1)
   }
 }
-console.log(factorial(7))
+console.log('Hasil dari factorial 7:', factorial(7))
 
 // ======================================== ARROW FUNCTION
 const orang = (nama) => {
