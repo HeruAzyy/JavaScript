@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0" />
     <style>
       .dark {
-        background-color: #1a1a64;
+        background-color: #232b3f;
         color: #e6e6e6;
       }
     </style>
@@ -17,6 +17,7 @@
   <body>
     <script>
       document.body.style.maxWidth = '500px'
+      document.body.style.margin = '0 auto'
       document.body.style.textAlign = 'center'
       document.body.style.fontFamily = 'Poppins'
       document.body.style.transition = '200ms'
@@ -24,9 +25,8 @@
       // H1 function expression
       const judul = function (teks) {
         const h1 = document.createElement('h1')
-        const teksH1 = document.createTextNode(teks)
+        h1.textContent = teks
 
-        h1.appendChild(teksH1)
         document.body.appendChild(h1)
       }
 
@@ -34,9 +34,8 @@
 
       // button
       const btn = document.createElement('button')
-      const teksBtn = document.createTextNode('Mode')
+      btn.textContent = 'Mode'
 
-      btn.appendChild(teksBtn)
       document.body.appendChild(btn)
       btn.setAttribute('type', 'button')
       btn.style.cursor = 'pointer'
@@ -49,9 +48,8 @@
       // P function arrow
       const paragraf = (teks) => {
         const p = document.createElement('p')
-        const teksP = document.createTextNode(teks)
+        p.textContent = teks
 
-        p.appendChild(teksP)
         document.body.append(p)
       }
 

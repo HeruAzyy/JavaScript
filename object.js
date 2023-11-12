@@ -1,47 +1,83 @@
 // Object = Kumpulan nilai yang mempunyai 'nama'
 
 // ============================= LITERAL
-let orang1 = {
-  // dibawah ini adalah PROPERTI
-  nama: 'Heru Azy',
-  umur: 22,
-  pekerjaan: 'Programmer Pro',
-  hoby: 'Coding'
+// let orang1 = {
+//   nama: 'Heru',
+//   energi: 10,
+//   makan: function (porsi) {
+//     this.energi += porsi
+//     console.log(`Halo ${this.nama}, selamat makan.`)
+//   }
+// }
+// orang1.makan(2)
+// console.table(orang1)
 
-  // object dalam object
-  // alamat: {
-  //   provinsi: 'Jawa Tengah',
-  //   kota: 'Semarang',
-  //   jalan: 'Thamrin'
-  // }
-
-  // func didalam object adalah METHOD
-  // sapa: function () {
-  //   return `Hallo nama saya ${this.nama} umur saya ${this.umur} dan saya seorang ${this.pekerjaan}.`
-  // }
-}
-console.log(orang1)
+// let orang2 = {
+//   nama: 'Lesi',
+//   energi: 10,
+//   makan: function (porsi) {
+//     this.energi += porsi
+//     console.log(`Halo ${this.nama}, selamat makan.`)
+//   }
+// }
+// orang2.makan(3)
+// console.table(orang2)
 
 // ============================= FUNCTION DECLARATION
-function orang2(nama, umur, pekerjaan, hoby) {
-  let deskripsiOrang2 = {
-    nama: nama,
-    umur: umur,
-    pekerjaan: pekerjaan,
-    hoby: hoby
-  }
+// function Orang(nama, energi) {
+//   let orang = {}
+//   orang.nama = nama
+//   orang.energi = energi
+//   orang.makan = function (porsi) {
+//     orang.energi += porsi
 
-  return deskripsiOrang2
-}
-console.table(orang2('Lesi Merina', 22, 'Pastry Pro', 'Cook'))
+//     console.log(
+//       `Halo ${this.nama} selamat makan, energimu akan bertambah menjadi ${this.energi}`
+//     )
+//   }
+
+//   orang.kerja = function (jam) {
+//     orang.energi -= jam
+//     console.log(
+//       `Halo ${this.nama} selamat bekerja, energimu akan berkurang menjadi ${this.energi}`
+//     )
+//   }
+//   return orang
+// }
+
+// let heru = Orang('Heru', 10)
+// heru.makan(5)
+// heru.kerja(2)
 
 // ============================= FUNCTION CONSTRUCTOR
 // nama function diawali huruf kapital
-function Orang3(nama, umur, hoby) {
+function Orang(nama, energi) {
   this.nama = nama
-  this.umur = umur
-  this.hoby = hoby
+  this.energi = energi
+  this.makan = function (porsi) {
+    this.energi += porsi
+
+    console.log(
+      `Halo ${this.nama} selamat makan, energimu akan bertambah menjadi ${this.energi}`
+    )
+  }
+
+  this.kerja = function (jam) {
+    this.energi -= jam
+    console.log(
+      `Halo ${this.nama} selamat bekerja, energimu akan berkurang menjadi ${this.energi}`
+    )
+  }
 }
+
 // gunakan key NEW saat panggil nama function
-console.table(new Orang3('Heru Azy', 22, 'Coding'))
-console.table(new Orang3('Lesi Merina', 22, 'Cooking'))
+let heru = new Orang('Heru', 10)
+heru.makan(4)
+heru.kerja(2)
+
+// Contoh lain
+function Mahasiswa(nama, jurusan) {
+  this.Nama = nama
+  this.Jurusan = jurusan
+}
+console.table(new Mahasiswa('Heru Azy', 'Ekonomi Bisnis'))
