@@ -139,63 +139,54 @@
 // heru.tidur(6)
 
 // ============================= PROTOTYPE
-// function Karakter(nama, energi) {
-//   this.nama = nama
-//   this.energi = energi
-// }
+function Karakter(nama, energi) {
+  this.nama = nama
+  this.energi = energi
+}
 
-// // method MAKAN
-// Karakter.prototype.makan = function (porsi) {
-//   this.energi += porsi
-//   console.log(
-//     `Halo ${this.nama} selamat makan, energimu akan bertambah menjadi ${this.energi}`
-//   )
-// }
+// method MAKAN
+Karakter.prototype.makan = function (porsi) {
+  this.energi += porsi
+  console.log(
+    `Halo ${this.nama} selamat makan, energimu akan bertambah menjadi ${this.energi}`
+  )
+}
 
-// // method KERJA
-// Karakter.prototype.kerja = function (jam) {
-//   this.energi -= jam
-//   console.log(
-//     `Halo ${this.nama} selamat bekerja, energimu akan berkurang menjadi ${this.energi}`
-//   )
-// }
-
-// // method TIDUR
-// Karakter.prototype.tidur = function (jam) {
-//   this.energi += jam * 2
-//   console.log(
-//     `Halo ${this.nama} selamat tidur, energimu akan bertambah menjadi ${this.energi}`
-//   )
-// }
-
-// let heru = new Karakter('Heru', 10)
-// heru.makan(1)
-// heru.kerja(2)
-// heru.tidur(5)
-
-// ============================= CLASS
-class Karakter {
-  constructor(nama, energi) {
-    this.nama = nama
-    this.energi = energi
-  }
-
-  makan(porsi) {
-    this.energi += porsi
-    console.log(
-      `Halo ${this.nama} selamat makan, energimu akan bertambah menjadi ${this.energi}`
-    )
-  }
-
-  kerja(jam) {
-    this.energi -= jam
-    console.log(
-      `Halo ${this.nama} selamat bekerja, energimu akan berkurang menjadi ${this.energi}`
-    )
-  }
+// method KERJA
+Karakter.prototype.kerja = function (jam) {
+  this.energi -= jam
+  console.log(
+    `Halo ${this.nama} selamat bekerja, energimu akan berkurang menjadi ${this.energi}`
+  )
 }
 
 let heru = new Karakter('Heru', 10)
-console.log(heru)
-heru.makan(5)
-heru.kerja(3)
+heru.makan(1)
+heru.kerja(2)
+
+// ============================= CLASS
+// class Karakter {
+//   constructor(nama, energi) {
+//     this.nama = nama
+//     this.energi = energi
+//   }
+
+//   makan(porsi) {
+//     this.energi += porsi
+//     console.log(
+//       `Halo ${this.nama} selamat makan, energimu akan bertambah menjadi ${this.energi}`
+//     )
+//   }
+
+//   kerja(jam) {
+//     this.energi -= jam
+//     console.log(
+//       `Halo ${this.nama} selamat bekerja, energimu akan berkurang menjadi ${this.energi}`
+//     )
+//   }
+// }
+
+// let heru = new Karakter('Heru', 10)
+// console.log(heru)
+// heru.makan(5)
+// heru.kerja(3)
