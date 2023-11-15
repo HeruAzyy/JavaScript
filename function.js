@@ -34,14 +34,14 @@
 // inner() -> panggil func diluar scope akan error
 
 // ======================================== RECURSIVE FUNCTION
-function factorial(value) {
-  if (value === 1) {
-    return 1
-  } else {
-    return value * factorial(value - 1)
-  }
-}
-console.log('Hasil dari factorial 7:', factorial(7))
+// function factorial(value) {
+//   if (value === 1) {
+//     return 1
+//   } else {
+//     return value * factorial(value - 1)
+//   }
+// }
+// console.log('Hasil dari factorial 7:', factorial(7))
 
 // ======================================== ARROW FUNCTION
 const orang = (nama) => {
@@ -52,5 +52,5 @@ orang('Heru Azy')
 orang('Lesi Merina')
 
 // arrow function bisa ditulis dalam satu baris jika code sederhana.
-const contoh = () => console.log('Function tanpa block/sebaris')
-contoh()
+// const contoh = () => console.log('Function tanpa block/sebaris')
+// contoh()

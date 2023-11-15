@@ -1,4 +1,4 @@
-// FOR IN
+// ========================================== FOR IN
 // mengiterasi data property pada object atau index array
 const person = {
   nama: 'Heru Azy',
@@ -14,7 +14,7 @@ for (let index in nama) {
   console.log(`Index ke-${index} adalah: ${nama[index]}`)
 }
 
-// FOR OF
+// ========================================== FOR OF
 // mengiterasi isi value
 const nama2 = ['Lesi', 'Merina']
 for (let value of nama2) {
