@@ -17,8 +17,8 @@ function salam(waktu) {
   }
 }
 
-let pagi = salam('Pagi')
-let siang = salam('Siang')
+// let pagi = salam('Pagi')
+// let siang = salam('Siang')
 let malam = salam('Malam')
 
 malam('Heru Azy')
