@@ -14,46 +14,46 @@
 	</head>
 	<body>
 		<script>
-			document.body.style.maxWidth = '500px'
-			document.body.style.margin = '0 auto'
-			document.body.style.textAlign = 'center'
-			document.body.style.fontFamily = 'Poppins'
-			document.body.style.transition = '200ms'
+			document.body.style.maxWidth = '500px';
+			document.body.style.margin = '0 auto';
+			document.body.style.textAlign = 'center';
+			document.body.style.fontFamily = 'Poppins';
+			document.body.style.transition = '200ms';
 
 			// H1 function expression
 			const judul = function (teks) {
-				const h1 = document.createElement('h1')
-				h1.textContent = teks
+				const h1 = document.createElement('h1');
+				h1.textContent = teks;
 
-				document.body.appendChild(h1)
-			}
+				document.body.appendChild(h1);
+			};
 
-			judul('Function x DOM')
+			judul('Function x DOM');
 
 			// button
-			const btn = document.createElement('button')
-			btn.textContent = 'Mode'
+			const btn = document.createElement('button');
+			btn.textContent = 'Mode';
 
-			document.body.appendChild(btn)
-			btn.setAttribute('type', 'button')
-			btn.style.cursor = 'pointer'
+			document.body.appendChild(btn);
+			btn.setAttribute('type', 'button');
+			btn.style.cursor = 'pointer';
 
 			// saat btn diklik akan merubah dark mode
 			btn.addEventListener('click', () => {
-				document.body.classList.toggle('dark')
-			})
+				document.body.classList.toggle('dark');
+			});
 
 			// P function arrow
 			const paragraf = (teks) => {
-				const p = document.createElement('p')
-				p.textContent = teks
+				const p = document.createElement('p');
+				p.textContent = teks;
 
-				document.body.append(p)
-			}
+				document.body.append(p);
+			};
 
 			paragraf(
 				'Selamat datang di latihan Function x DOM. Ini saya buat menggunakan DOM yang disimpan dalam function untuk keperluan reusability.'
-			)
+			);
 		</script>
 	</body>
 </html>

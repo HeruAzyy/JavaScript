@@ -25,7 +25,7 @@
 	"editor.mouseWheelScrollSensitivity": 2,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"prettier.jsxSingleQuote": true,
-	"prettier.semi": false,
+	"prettier.semi": true,
 	"terminal.integrated.cursorStyle": "line",
 	"prettier.htmlWhitespaceSensitivity": "ignore",
 	"prettier.bracketSameLine": true

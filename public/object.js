@@ -167,26 +167,26 @@
 // ============================= CLASS
 class Karakter {
 	constructor(nama, energi) {
-		this.nama = nama
-		this.energi = energi
+		this.nama = nama;
+		this.energi = energi;
 	}
 
 	makan(porsi) {
-		this.energi += porsi
+		this.energi += porsi;
 		console.log(
 			`Halo ${this.nama} selamat makan, energimu akan bertambah menjadi ${this.energi}`
-		)
+		);
 	}
 
 	kerja(jam) {
-		this.energi -= jam
+		this.energi -= jam;
 		console.log(
 			`Halo ${this.nama} selamat bekerja, energimu akan berkurang menjadi ${this.energi}`
-		)
+		);
 	}
 }
 
-let heru = new Karakter('Heru', 10)
-console.log(heru)
-heru.makan(5)
-heru.kerja(3)
+let heru = new Karakter('Heru', 10);
+console.log(heru);
+heru.makan(5);
+heru.kerja(3);

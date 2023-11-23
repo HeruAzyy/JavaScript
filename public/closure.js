@@ -2,39 +2,39 @@
 // untuk function factories dan private method
 
 function init() {
-	let nama = 'Heru'
+	let nama = 'Heru';
 	function tampilNama() {
-		console.log(nama)
+		console.log(nama);
 	}
-	tampilNama()
+	tampilNama();
 }
-init()
+init();
 
 // Contoh lain closure (function factories)
 function salam(waktu) {
 	return function (nama) {
-		console.log(`Halo ${nama}, selamat ${waktu}.`)
-	}
+		console.log(`Halo ${nama}, selamat ${waktu}.`);
+	};
 }
 
 // let pagi = salam('Pagi')
 // let siang = salam('Siang')
-let malam = salam('Malam')
+let malam = salam('Malam');
 
-malam('Heru Azy')
+malam('Heru Azy');
 
 // Contoh lain closure (private method)
 let add = (function () {
-	let counter = 0
+	let counter = 0;
 	return function () {
-		console.log(++counter)
-	}
-})()
+		console.log(++counter);
+	};
+})();
 
-add()
+add();
 
 let nama = function (nama) {
-	return console.log(`Halo ${nama}`)
-}
+	return console.log(`Halo ${nama}`);
+};
 
-nama('Heru')
+nama('Heru');
