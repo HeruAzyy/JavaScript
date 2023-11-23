@@ -1,61 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <style>
-      .dark {
-        background-color: #232b3f;
-        color: #e6e6e6;
-      }
-    </style>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			.dark {
+				background-color: #232b3f;
+				color: #e6e6e6;
+			}
+		</style>
 
-    <title>Function & DOM</title>
-  </head>
-  <body>
-    <script>
-      document.body.style.maxWidth = '500px'
-      document.body.style.margin = '0 auto'
-      document.body.style.textAlign = 'center'
-      document.body.style.fontFamily = 'Poppins'
-      document.body.style.transition = '200ms'
+		<title>Function & DOM</title>
+	</head>
+	<body>
+		<script>
+			document.body.style.maxWidth = '500px'
+			document.body.style.margin = '0 auto'
+			document.body.style.textAlign = 'center'
+			document.body.style.fontFamily = 'Poppins'
+			document.body.style.transition = '200ms'
 
-      // H1 function expression
-      const judul = function (teks) {
-        const h1 = document.createElement('h1')
-        h1.textContent = teks
+			// H1 function expression
+			const judul = function (teks) {
+				const h1 = document.createElement('h1')
+				h1.textContent = teks
 
-        document.body.appendChild(h1)
-      }
+				document.body.appendChild(h1)
+			}
 
-      judul('Function x DOM')
+			judul('Function x DOM')
 
-      // button
-      const btn = document.createElement('button')
-      btn.textContent = 'Mode'
+			// button
+			const btn = document.createElement('button')
+			btn.textContent = 'Mode'
 
-      document.body.appendChild(btn)
-      btn.setAttribute('type', 'button')
-      btn.style.cursor = 'pointer'
+			document.body.appendChild(btn)
+			btn.setAttribute('type', 'button')
+			btn.style.cursor = 'pointer'
 
-      // saat btn diklik akan merubah dark mode
-      btn.addEventListener('click', () => {
-        document.body.classList.toggle('dark')
-      })
+			// saat btn diklik akan merubah dark mode
+			btn.addEventListener('click', () => {
+				document.body.classList.toggle('dark')
+			})
 
-      // P function arrow
-      const paragraf = (teks) => {
-        const p = document.createElement('p')
-        p.textContent = teks
+			// P function arrow
+			const paragraf = (teks) => {
+				const p = document.createElement('p')
+				p.textContent = teks
 
-        document.body.append(p)
-      }
+				document.body.append(p)
+			}
 
-      paragraf(
-        'Selamat datang di latihan Function x DOM. Ini saya buat menggunakan DOM yang disimpan dalam function untuk keperluan reusability.'
-      )
-    </script>
-  </body>
+			paragraf(
+				'Selamat datang di latihan Function x DOM. Ini saya buat menggunakan DOM yang disimpan dalam function untuk keperluan reusability.'
+			)
+		</script>
+	</body>
 </html>

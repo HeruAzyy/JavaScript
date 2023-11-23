@@ -2,9 +2,9 @@
 let nilai = 75
 
 if (nilai >= 75) {
-  console.log('Selamat anda lulus')
+	console.log('Selamat anda lulus')
 } else {
-  console.log('Maaf anda belum lulus')
+	console.log('Maaf anda belum lulus')
 }
 
 // ternary Statement

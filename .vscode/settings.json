@@ -1,32 +1,32 @@
 {
-  "editor.minimap.enabled": false,
-  "editor.formatOnSave": true,
-  "editor.tabSize": 2,
-  "editor.fontSize": 18,
-  "workbench.colorTheme": "Andromeda Bordered",
-  "workbench.iconTheme": "vscode-icons",
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "none",
-  "editor.codeActionsOnSave": {},
-  "editor.fontFamily": "Jetbrains mono",
-  "editor.fontWeight": "300",
-  "liveServer.settings.donotShowInfoMsg": true,
-  "editor.wordWrap": "on",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "terminal.integrated.fontWeight": "600",
-  "explorer.confirmDelete": false,
-  "[postcss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "liveServer.settings.donotVerifyTags": true,
-  "editor.mouseWheelScrollSensitivity": 2,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.jsxSingleQuote": true,
-  "prettier.semi": false,
-  "terminal.integrated.cursorStyle": "line",
-  "prettier.htmlWhitespaceSensitivity": "ignore",
-  "prettier.bracketSameLine": true
+	"editor.minimap.enabled": false,
+	"editor.formatOnSave": true,
+	"editor.tabSize": 3,
+	"editor.fontSize": 18,
+	"workbench.colorTheme": "Andromeda Bordered",
+	"workbench.iconTheme": "vscode-icons",
+	"prettier.singleQuote": true,
+	"prettier.trailingComma": "none",
+	"editor.codeActionsOnSave": {},
+	"editor.fontFamily": "Jetbrains mono",
+	"editor.fontWeight": "200",
+	"liveServer.settings.donotShowInfoMsg": true,
+	"editor.wordWrap": "on",
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
+	"terminal.integrated.fontWeight": "600",
+	"explorer.confirmDelete": false,
+	"[postcss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"liveServer.settings.donotVerifyTags": true,
+	"editor.mouseWheelScrollSensitivity": 2,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.jsxSingleQuote": true,
+	"prettier.semi": false,
+	"terminal.integrated.cursorStyle": "line",
+	"prettier.htmlWhitespaceSensitivity": "ignore",
+	"prettier.bracketSameLine": true
 }
