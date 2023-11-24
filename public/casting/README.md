@@ -1,5 +1,9 @@
 # Casting
 
+> Type casting berarti mentransfer data dari satu tipe data ke tipe data lainnya dengan secara `Eksplisit` menentukan tipe yang akan digunakan untuk mengonversi data tertentu. Type casting eksplisit biasanya dilakukan untuk membuat data kompatibel dengan variabel lain. Contoh metode typecasting adalah `parseInt()`, `parseFloat()`, `toString()`.
+
+> Konversi tipe `Implisit` terjadi ketika compiler atau runtime secara otomatis mengonversi tipe data. JavaScript adalah bahasa yang diketik secara longgar dan sering kali operator secara otomatis mengonversi nilai ke jenis yang tepat.
+
 Seringkali, operator dan fungsi secara otomatis mengonversi nilai yang diberikan ke tipe yang tepat.
 
 Misalnya, `alert` secara otomatis mengonversi nilai apa pun menjadi string untuk menampilkannya. Operasi matematika mengubah nilai menjadi angka.
