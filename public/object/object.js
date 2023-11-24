@@ -1,5 +1,5 @@
 // ============================= LITERAL
-let orang1 = {
+let orang = {
 	nama: 'Heru Azy', // property
 	umur: 22, // property
 	sayHello: function () {
@@ -7,5 +7,6 @@ let orang1 = {
 	}
 };
 
-console.table(orang1);
-orang1.sayHello();
+console.table(orang);
+orang.sayHello();
+console.log(typeof orang); // object
