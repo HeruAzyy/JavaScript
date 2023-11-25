@@ -35,3 +35,32 @@ console.log(array2.length); // 3
 console.log(array3.length); // 2
 console.log(array4.length); // 3
 ```
+
+## Push
+
+Sebuah array bisa kita manipulasi dengan beberapa cara, contohnya menggunakan `push`.
+push akan menambahkan data di posisi `paling akhir` pada array, contoh:
+
+```javascript
+const arr = []; // array kosong
+
+arr.push('Heru'); // index ke-0 ['Heru']
+arr.push('Azy'); // index ke-1 ['Azy']
+arr.push(22); // index ke-2 [22]
+arr.push(true); //index ke-3 [true]
+
+// Atau bisa sekaligus
+arr.push('Lesi', 'Merina'); // akan masuk di index ke-4 & 5
+
+console.log(arr); // ['Heru', 'Azy', 22, true, 'Lesi', 'Merina']
+```
+
+Atau bisa `mengubah` isi array pada `index` tertentu.
+
+```javascript
+const arr = [1, 2, 3, 4, 5]; // [1, 2, 3, 4, 5]
+
+arr[2] = 'Baru'; // value '3' diupdate jadi value 'Baru'
+
+console.log(arr); // [1, 2, 'Baru', 4, 5]
+```
