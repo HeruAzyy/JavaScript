@@ -64,6 +64,41 @@ Function juga bisa memproses data yang dinamis, disitulah Parameter dan Argumen 
 - Argument adalah nilai yang dikirimkan saat function dipanggil
   dan akan ditampung oleh parameter.
 
+### Parameter & Argument
+
+`Parameter` adalah variable yang ditulis di dalam kurung pada saat function dibuat, digunakan untuk menampung nilai yang dikirimkan pada saat function dipanggil.
+
+`Argument` adalah nilai yang dikirimkan ke parameter pada saat function dipanggil.
+
+```javascript
+function contoh(parameter) {
+	// body funtion
+}
+
+contoh(argument);
+```
+
+> sebuah function bisa berisi `parameter` atau tidak, tapi jika ada parameter maka harus ada `argument` pada saat pemanggilan function.
+
+Saat parameternya kosong nilai pada argument akan tersimpan sebagai `array` di dalam `arguments`.
+
+Contoh:
+![Arguments](../../img/arguments.png)
+
+Kita juga bisa mengakses `arguments` dengan cara meloop array didalamnya.
+
+```javascript
+function coba() {
+	let hasil = 0;
+	for (let i = 0; i < arguments.length; i++) {
+		hasil += arguments[i];
+	}
+	return hasil;
+}
+
+coba(1, 2, 3); // 6
+```
+
 ### Sifat Function
 
 Sebuah function boleh mengembalikan sebuah nilai ataupun tidak mengembalikan nilai. Jika ingin mengembalikan sebuah nilai maka gunakan perintah return.
