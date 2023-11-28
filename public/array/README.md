@@ -6,6 +6,10 @@ Array adalah objek yang menyimpan kumpulan item dan dapat ditugaskan ke suatu va
 
 Untuk mendeklarasikan array pada javascript adalah dengan menggunakan tanda kurung siku buka dan kurung siku tutup `[]`.
 
+```javascript
+const arr = [];
+```
+
 ## Mengakses dan Mengambil Nilai pada Array
 
 Untuk mengambil / mengakses nilai yang ada pada array adalah dengan menggunakan angka sebagai index yang dibungkus dengan kurung siku.
@@ -36,31 +40,62 @@ console.log(array3.length); // 2
 console.log(array4.length); // 3
 ```
 
-## Push
+## Join()
 
-Sebuah array bisa kita manipulasi dengan beberapa cara, contohnya menggunakan `push`.
-push akan menambahkan data di posisi `paling akhir` pada array, contoh:
+Untuk merubah isi array menjadi string bisa menggunakan method `join()`
 
 ```javascript
-const arr = []; // array kosong
+const arr = ['Heru', 'Azy', 'Pangestu'];
+console.log(arr.join());
+// console.log(arr.join(' ')); ini akan memisahkan array dengan spasi.
 
-arr.push('Heru'); // index ke-0 ['Heru']
-arr.push('Azy'); // index ke-1 ['Azy']
-arr.push(22); // index ke-2 [22]
-arr.push(true); //index ke-3 [true]
-
-// Atau bisa sekaligus
-arr.push('Lesi', 'Merina'); // akan masuk di index ke-4 & 5
-
-console.log(arr); // ['Heru', 'Azy', 22, true, 'Lesi', 'Merina']
+// Heru,Azy,Pangestu
 ```
 
-Atau bisa `mengubah` isi array pada `index` tertentu.
+## push & pop
+
+`push` & `pop` akan menambah atau menghapus data array pada posisi paling `akhir`.
+
+- `push()` akan menambahkan data di posisi paling `akhir` pada array.
 
 ```javascript
-const arr = [1, 2, 3, 4, 5]; // [1, 2, 3, 4, 5]
+const arr = ['Heru', 'Azy', 'Lesi', 'Merina'];
+arr.push('Zianka');
 
-arr[2] = 'Baru'; // value '3' diupdate jadi value 'Baru'
+console.log(arr); //['Heru', 'Azy', 'Lesi', 'Merina', 'Zianka']
+```
 
-console.log(arr); // [1, 2, 'Baru', 4, 5]
+> Untuk push kita bisa menambahkan beberapa element sekaligus. Sebagai contoh `arr.push(1, 2, 3)`
+
+- `pop()` akan menghapus data di posisi paling `akhir` pada array.
+
+```javascript
+const arr = ['Heru', 'Azy', 'Lesi', 'Merina'];
+arr.pop();
+
+console.log(arr); //['Heru', 'Azy', 'Lesi',]
+```
+
+## unshift & shift
+
+`unsift` & `shift` akan menambah atau menghapus data array pada posisi paling `awal`.
+
+- `unshift` akan menambahkan data di posisi paling `awal` pada array.
+
+```javascript
+const arr = ['Heru', 'Azy', 'Lesi', 'Merina'];
+arr.unshift('Zianka');
+
+console.log(arr); //['Zianka', 'Heru', 'Azy', 'Lesi', 'Merina']
+```
+
+> Untuk unshift juga bisa menambahkan beberapa element sekaligus. Sebagai contoh `arr.push(1, 2, 3)`
+
+- `shift` akan menambahkan data di posisi paling `awal` pada array.
+
+```javascript
+const arr = ['Heru', 'Azy', 'Lesi', 'Merina'];
+arr.shift();
+
+console.log(arr); //['Azy', 'Lesi', 'Merina']
 ```
