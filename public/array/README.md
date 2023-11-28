@@ -99,3 +99,75 @@ arr.shift();
 
 console.log(arr); //['Azy', 'Lesi', 'Merina']
 ```
+
+## forEach & map
+
+Kedua method ini digunakan untuk melooping setiap element pada array.
+
+- `forEach`
+
+```javascript
+const nama = ['Heru', 'Azy', 'Lesi', 'Merina'];
+
+nama.forEach(function (e, i) {
+	console.log(`Nama ke-${i + 1} adalah: ${e}`);
+});
+
+// Nama ke-1 adalah: Heru
+// Nama ke-2 adalah: Azy
+// Nama ke-3 adalah: Lesi
+// Nama ke-4 adalah: Merina
+```
+
+- `map`
+
+> Info: method `map` mengembalikan array baru.
+
+```javascript
+const arr = [1, 2, 3, 4, 5];
+
+const arr2 = arr.map(function (e) {
+	return e * 2;
+});
+
+console.log(arr2.join(' - '));
+
+//2 - 4 - 6 - 8 - 10
+```
+
+## filter & find
+
+Kedua method ini digunakan untuk mencari element pada array.
+
+- `filter`
+  digunakan untuk mencari `banyak` nilai.
+
+```javascript
+const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const angka2 = angka.filter(function (e) {
+	return e > 5;
+});
+
+console.log(angka2.join(' - '));
+
+// 6 - 7 - 8 - 9 - 10
+```
+
+> Info: dari kasus di atas, filter akan mencari `semua` nilai yang lebih besar dari 5.
+
+- `find`
+
+digunakan untuk mencari `satu` nilai.
+
+```javascript
+const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const angka2 = angka.find(function (e) {
+	return e > 5;
+});
+
+console.log(angka2);
+
+// 6
+```
+
+> Info: dari kasus di atas, find akan mencari nilai `pertama` yang lebih besar dari 5.
