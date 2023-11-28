@@ -82,7 +82,6 @@ contoh(argument);
 
 Saat parameternya kosong nilai pada argument akan tersimpan sebagai `array` di dalam `arguments`.
 
-Contoh:
 ![Arguments](../../img/arguments.png)
 
 Kita juga bisa mengakses `arguments` dengan cara meloop array didalamnya.
