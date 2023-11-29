@@ -42,3 +42,60 @@ dataDiri.perkenalan(); // menghasilkan tampilan pada konsol yaitu "Hai, nama say
 ```
 
 Dari contoh di atas, _object_ `dataDiri` memiliki _method_ yang diberi nama perkenalan. _Method_ perkenalan kemudian dipanggil setelah `dataDiri` dideklarasikan dan menjalankan perintah dalam fungsinya.
+
+**Ada beberapa cara untuk membuat sebuah object di javascript.**
+
+## object literal
+
+Cara membuat object literal adalah cara paling simple, dengan hanya deklarasi variable yang diisi dengan `properti` object.
+
+```javascript
+const orang = {
+	nama: 'Heru Azy',
+	umur: 22,
+	pekerjaan: 'Front-end Developer'
+};
+
+console.log(orang);
+
+// {nama: 'Heru Azy', umur: 22, pekerjaan: 'Front-end Developer'}
+```
+
+## function declaration
+
+Dengan cara ini kita akan memasukkan sebuah object kedalam `function`, cukup deklarasi sekali kita bisa panggil dan isikan `properti` berulang-ulang.
+
+```javascript
+function orang(nama, umur, pekerjaan) {
+	let obj = {};
+	obj.nama = nama;
+	obj.umur = umur;
+	obj.pekerjaan = pekerjaan;
+
+	return obj;
+}
+
+console.log(orang('Heru', 22, 'Front-end Developer'));
+// {nama: 'Heru', umur: 22, pekerjaan: 'Front-end Developer'}
+
+console.log(orang('Lesi', 22, 'Artisan Bakery'));
+// {nama: 'Lesi', umur: 22, pekerjaan: 'Artisan Bakery'}
+```
+
+## constructor
+
+Cara ini mirip dengan function declaration, tapi nama function biasanya diawali dengan huruf `kapital`. Dan saat pemanggilan funtion harus menggunakan keyword `new`.
+
+```javascript
+function Orang(nama, umur, pekerjaan) {
+	this.nama = nama;
+	this.umur = umur;
+	this.pekerjaan = pekerjaan;
+}
+
+console.log(new Orang('Heru', 22, 'Front-end Developer'));
+
+// Orang {nama: 'Heru', umur: 22, pekerjaan: 'Front-end Developer'}
+```
+
+> Jika pada saat pemanggilan function tidak menggunakan keyword `new` akan menghasilkan `undefined`, karena fungsinya tidak mengembalikan apapun.
