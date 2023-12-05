@@ -26,3 +26,24 @@ console.log(people.umur); // 22
 ```
 
 > Penting: Tidak disarankan menggunakan `proto` didalam production level, ini akan berdampak pada performa program. Code diatas hanya sebagai contoh untuk konsep pewarisan pada javascript.
+
+## object.create()
+
+Kita bisa menggunakan `object.create()` untuk konsep pewarisan.
+
+```javascript
+let orang = {
+	nama: 'Lesi',
+	umur: 22
+};
+
+let people = Object.create(orang);
+// sekarang "people" mewarisi semua property dari "orang".
+
+console.log(people.nama); // Lesi
+console.log(people.umur); // 22
+```
+
+Dengan menggunakan `object.create()` maka akan menghasilkan output yang sama saat menggunakan `proto`, dan cara ini yang memang lebih disarankan.
+
+> Info: perubahan state yang terjadi di parent menyebabkan state yang ada di child berubah, sementara perubahan state di child tidak berpengaruh pada parent. Lihat contohnya [disini](./inheritance.js)
