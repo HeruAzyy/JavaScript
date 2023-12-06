@@ -19,12 +19,12 @@ console.log(`Ubah rambut parent jadi MERAH
 parent.rambut = 'merah';
 
 console.log(`Parent mempunyai rambut ${parent.rambut} dan mata ${parent.mata}`);
-// Parent mempunyai rambut hitam dan mata coklat
+// Parent mempunyai rambut merah dan mata coklat
 
 console.log(
 	`Child mempunyai rambut ${child.rambut} dan mata ${child.mata}
    `
-); // Child mempunyai rambut hitam dan mata coklat
+); // Child mempunyai rambut merah dan mata coklat
 
 // ========================================= UBAH WARNA MATA CHILD
 console.log(`Ubah mata parent jadi hitam
