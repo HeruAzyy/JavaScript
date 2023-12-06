@@ -47,3 +47,28 @@ console.log(people.umur); // 22
 Dengan menggunakan `object.create()` maka akan menghasilkan output yang sama saat menggunakan `proto`, dan cara ini yang memang lebih disarankan.
 
 > Info: perubahan state yang terjadi di parent menyebabkan state yang ada di child berubah, sementara perubahan state di child tidak berpengaruh pada parent. Lihat contohnya [disini](./inheritance.js)
+
+## constructor function
+
+Didalam javascript kita bisa menggunakan `function constructor` untuk membuat object dan menetapkan prototype pada object tersebut. Contohnya sebagai berikut:
+
+```javascript
+function Person(nama, umur) {
+	this.nama = nama;
+	this.umur = umur;
+}
+
+Person.prototype.salam = function () {
+	console.log(
+		`Halo nama saya ${this.nama}, dan umur saya ${this.umur} tahun.`
+	);
+};
+
+const heru = new Person('Heru', 22);
+heru.salam(); // Halo nama saya Heru, dan umur saya 22 tahun.
+
+const lesi = new Person('Lesi', 22);
+lesi.salam(); // Halo nama saya Lesi, dan umur saya 22 tahun.
+```
+
+Konsep ini memungkinkan Anda untuk membuat `banyak objek` dengan struktur dan perilaku yang sama, sambil memanfaatkan warisan melalui `prototype`. Ini adalah salah satu cara untuk menerapkan pemrograman berorientasi objek di JavaScript menggunakan `konstructor function`.
