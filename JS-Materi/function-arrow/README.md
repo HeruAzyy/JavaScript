@@ -11,9 +11,11 @@ console.log(sapa('Heru Azy')); // Halo Heru Azy.
 ## **Kelebihan arrow function**
 
 1. Ringkas
+
    Arrow function akan lebih ringkas dalam penulisan, terutama saat function hanya memiliki satu statement return.
 
 2. `this` Binding
+
    Arrow function tidak memiliki this sendiri, mereka mengambil nilai this dari lingkup yang mengelilingi (enclosing scope). Ini membuat penggunaan this dalam arrow function lebih mudah dipahami.
 
 ```javascript
