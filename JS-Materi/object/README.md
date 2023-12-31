@@ -91,11 +91,16 @@ function Orang(nama, umur, pekerjaan) {
 	this.nama = nama;
 	this.umur = umur;
 	this.pekerjaan = pekerjaan;
+	this.perkenalan = () => {
+		return `Halo nama saya ${this.nama}, umur saya ${this.umur} tahun dan saya seorang ${this.pekerjaan}.`;
+	};
 }
 
 console.log(new Orang('Heru', 22, 'Front-end Developer'));
+// Orang {nama: 'Heru', umur: 22, pekerjaan: 'Front-end Developer'}
 
-// Orang {nama: 'Heru', umur: 22, pekerjaan: 'Front-end Developer'}
+console.log(new Orang('Heru', 22, 'Front-end Developer').perkenalan());
+// Halo nama saya Heru, umur saya 22 tahun dan saya seorang Front-end Developer.
 ```
 
 > Jika pada saat pemanggilan function tidak menggunakan keyword `new` akan menghasilkan `undefined`, karena fungsinya tidak mengembalikan apapun.
